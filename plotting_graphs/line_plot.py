@@ -21,5 +21,4 @@ class LinePlot():
                 self.fig, self.animate, frames=320, interval=self.interval, blit=True, save_count=50)
         if self.no_repeat == True:
             pass
-        print(self.interval)
         plt.show()
