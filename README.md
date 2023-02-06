@@ -1,16 +1,11 @@
 CSC8330: Practical 1
-====================
-========================================
 Advanced Programming for Digital Biology
-========================================
 
 This package is built as a part of the CSC8330: Advanced Programming
 for Digital Biology.
 Type `python hello_world.py` to see some useful information.
 
-=============================================================
 Argument options for plotting_graphs.py
-========================================
 
 --no-interval : stops the plot from animating - cannot be used with other arguments (default False)
     $ python3.11 plotting_graphs.py --no-repeat
@@ -27,6 +22,4 @@ Argument options for plotting_graphs.py
 --colour : select a colour for the sine wave - string copatible with matplotlib (3.6.3)
     $ python3.11 plotting_graphs.py --colour green
 
-===========================================================
 Code adapted from source material provided by Dr Jichung Li
-===========================================================
