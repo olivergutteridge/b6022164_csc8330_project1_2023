@@ -1,13 +1,14 @@
 from . import line_plot
+import numpy as np
 import argparse
 
 def cli():
-    parser = argparse.ArgumentParser(prog="plotting_graphs", description="a program that plots a waveform graph")
-    parser.add_argument("--no-repeat", help="suppress repeat", action="store_true") 
-    parser.add_argument("--interval", help="set interval (default 20)", default=20, action="store", type=int, choices=range(1, 31))
-    parser.add_argument("--frequency", help="set frequency (default 2)", default=2, action="store", type=int)
-    parser.add_argument("--amplitude", help="set amplitude (default 1)", default=1, action="store", type=float, choices=range(0.0,1.01))
-    parser.add_argument("--colour", help="set the colour of the wave (default blue)", default="blue", action="store", type=str)
+    parser = argparse.ArgumentParser(prog="plotting_graphs", description="A simple program that plots a Sine waveform graph")
+    parser.add_argument("--no-repeat", help="Suppress repeat", action="store_true") 
+    parser.add_argument("--interval", help="Set wave interval", default=20, action="store", type=int, choices=range(1, 31), metavar="INTERVAL")
+    parser.add_argument("--frequency", help="Set wave frequency", default=2, action="store", type=int, metavar="FREQUENCY")
+    parser.add_argument("--amplitude", help="Set wave amplitude", default=1, action="store", type=float, choices=np.arange(0.0,1.01,0.01), metavar="AMPLITUDE")
+    parser.add_argument("--colour", help="Set wave colour", default="blue", action="store", type=str, metavar="COLOUR")
     args = parser.parse_args()
 
     animation = line_plot.LinePlot(**vars(args))
