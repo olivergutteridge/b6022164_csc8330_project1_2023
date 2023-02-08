@@ -22,4 +22,4 @@ Install dependicies using the command ```pip3 install -r requirements.txt```.
 
 ## Credits
 
-Code adapted from source material provided by Dr Jichung Li. :tent:
+Code adapted from source material provided by Dr Jichung Li.
