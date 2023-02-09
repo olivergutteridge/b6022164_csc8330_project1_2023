@@ -23,5 +23,6 @@ class LinePlot():
             ani = animation.FuncAnimation(
                 self.fig, self.animate, frames=320, interval=20, blit=True, save_count=50)
         if self.no_repeat == True:
-            pass
+            ani = animation.FuncAnimation(
+                self.fig, self.animate, frames=320, interval=20, blit=True, save_count=50, repeat=False)
         plt.show()
