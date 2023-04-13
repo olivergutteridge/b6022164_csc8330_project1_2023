@@ -6,7 +6,7 @@
 
 This package is built as a part of the CSC8330: Advanced Programming
 for Digital Biology.   
-Plotting Graphs is a simple prgarm that allows the user to visualise and customise a Sine waveform.  
+Plotting Graphs is a simple prgarm that allows the user to visualise and customise a sine waveform.  
 Aditional usage information can be found using the command  ```python3.11 plotting_graphs.py --help```.  
 Install dependicies using the command ```pip3 install -r requirements.txt```.
 
